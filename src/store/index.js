@@ -5,11 +5,16 @@ Vue.use(Vuex)
 
 export default new Vuex.Store({
   state: {
+     advancedSearchFlag : false,
+
   },
   mutations: {
+ //aca se usa sincronas, palabra clave será commit
+     setAdvancedSearchFlag(state, advancedSearchFlag){
+       state.advancedSearchFlag= advancedSearchFlag;
+     }
   },
   actions: {
-  },
-  modules: {
+// llamadas asincronas, palabra clave dispatch
   }
 })
