@@ -2,13 +2,8 @@ const url_movies = 'https://yts.am/api/v2/list_movies.json';
 // const url_movies = 'https://yts.am/api/v2/list_movies.json?query_term=baby';
 // const url_movies = 'https://yts.am/api/v2/list_movies.json?genre=family&limit=20&quality=3D&sort_by=year&minimum_rating=7';
 
-
-//making some changes on purpose
 export default function getMovies(){
-   //const url = URL.replace(':country',country);
-
-   var proxyUrl = 'https://cors-anywhere.herokuapp.com/';
-   //  targetUrl = 'http://catfacts-api.appspot.com/api/facts?number=99'
+   var proxyUrl = 'https://29a04861.us-south.apigw.appdomain.cloud/ez/bridge/';
 
 fetch(proxyUrl + url_movies)
    return fetch(proxyUrl+url_movies)
